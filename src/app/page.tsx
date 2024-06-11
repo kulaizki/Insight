@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+
 export default function Home() {
   return (
     <div className="flex justify-center p-4 md:p-8">
@@ -10,6 +13,9 @@ export default function Home() {
             ex! Porro, labore ab doloribus quibusdam id nam dolor dolores
             tempore.
           </p>
+          <Button>
+            <Link href="./dashboard">Go to Dashboard</Link>
+          </Button>
         </div>
         <img className='rounded-md w-full md:w-auto' src='./maru-red.jpeg' alt='maru' />
       </div>
