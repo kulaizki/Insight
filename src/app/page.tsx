@@ -1,23 +1,30 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { Skeleton } from '@/components/ui/skeleton'
 
 export default function Home() {
   return (
-    <div className="flex justify-center p-4 md:p-8">
-      <div className='flex flex-col md:flex-row gap-4 md:gap-8 items-center border-4 p-4 md:p-8'>
+    <div className='flex justify-center p-4 md:p-8'>
+      <div className='flex flex-col items-center gap-4 border-4 p-4 md:flex-row md:gap-8 md:p-8'>
         <div className='flex flex-col gap-4'>
-          <h1 className='text-4xl md:text-6xl font-bold'>Insight</h1>
-          <p className='leading-7 max-w-full md:max-w-xl text-base md:text-lg'>
+          <h1 className='text-4xl font-bold md:text-6xl'>Insight</h1>
+          <p className='max-w-full text-base leading-7 md:max-w-xl md:text-lg'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quae
             architecto deserunt quam. Nobis autem assumenda optio porro neque
             ex! Porro, labore ab doloribus quibusdam id nam dolor dolores
             tempore.
           </p>
           <Button>
-            <Link href="./dashboard">Go to Dashboard</Link>
+            <Link href='./dashboard'>Go to Dashboard</Link>
           </Button>
         </div>
-        <img className='rounded-md w-full md:w-auto' src='./maru-red.jpeg' alt='maru' />
+        <Skeleton>
+          <img
+            className='w-full rounded-md md:w-auto'
+            src='./maru-red.jpeg'
+            alt='maru'
+          />
+        </Skeleton>
       </div>
     </div>
   )
