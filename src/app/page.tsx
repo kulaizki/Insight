@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="flex">
-      <div className='flex gap-8 p-8'>
+    <div className="flex justify-center">
+      <div className='flex gap-8 items-center border-4 p-8'>
         <div className='flex flex-col gap-4'>
           <h1 className='text-6xl font-bold'>Insight</h1>
           <p className='max-w-xl text-lg'>
