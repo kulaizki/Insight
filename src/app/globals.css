@@ -5,4 +5,5 @@
 body {
   background-color: #121212;
   color: aliceblue;
+  border: 1px solid red;
 }
