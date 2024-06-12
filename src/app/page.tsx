@@ -1,8 +1,13 @@
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
-import { Skeleton } from '@/components/ui/skeleton'
+'use client';
+
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function Home() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <div className='flex justify-center p-4 md:p-8'>
       <div className='flex flex-col items-center gap-4 border-4 p-4 md:flex-row md:gap-8 md:p-8'>
@@ -18,14 +23,10 @@ export default function Home() {
             <Link href='./dashboard'>Go to Dashboard</Link>
           </Button>
         </div>
-        <Skeleton>
-          <img
-            className='w-full rounded-md md:w-auto'
-            src='./maru-red.jpeg'
-            alt='maru'
-          />
-        </Skeleton>
+          <Skeleton>
+            <img src="./maru-red.jpeg" alt="" />
+          </Skeleton>
       </div>
     </div>
-  )
+  );
 }
