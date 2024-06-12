@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { Skeleton } from '@/components/ui/skeleton'
 
 export default function Home() {
   const [imageLoaded, setImageLoaded] = useState(false)
