@@ -1,5 +1,7 @@
 'use client';
 
+import { Table } from "@/components/ui/table";
+
 export default async function Page() {
   return (
     <section className='py-24'>
