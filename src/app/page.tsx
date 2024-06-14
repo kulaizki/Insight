@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div className='flex justify-center p-4 md:p-8'>
-      <div className='flex flex-col items-center gap-4 border-4 p-4 md:flex-row md:gap-8 md:p-8'>
+      <div className='flex flex-col items-center gap-4 border md:flex-row md:gap-8 md:p-8'>
         <div className='flex flex-col gap-4'>
           <h1 className='text-4xl font-bold md:text-6xl'>Insight</h1>
           <p className='max-w-full text-base leading-7 md:max-w-xl md:text-lg'>
@@ -19,7 +19,13 @@ export default function Home() {
             tempore.
           </p>
           <Button>
-            <Link href='./dashboard'>Go to Dashboard</Link>
+            <Link
+              href='https://www.tradingview.com/chart/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Go to Tradingview
+            </Link>
           </Button>
         </div>
         <img src='./maru-red.jpeg' alt='' />
