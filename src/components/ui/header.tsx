@@ -75,16 +75,16 @@ export function Header() {
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <ListItem href="/docs" title="Price Action">
-                Re-usable components built using Radix UI and Tailwind CSS.
+                Trend lines, Patterns, and Volume
               </ListItem>
               <ListItem href="/docs/installation" title="Smart Money Concept">
-                How to install dependencies and structure your app.
+                Order Blocks, Imbalances, and Liquidity
               </ListItem>
               <ListItem href="/docs/primitives/typography" title="Harmonic Patterns">
-                Styles for headings, paragraphs, lists...etc
+                Pattern Structure, Ratios, and Targets
               </ListItem>
               <ListItem href="/docs/primitives/typography" title="Trading Psychology">
-                Styles for headings, paragraphs, lists...etc
+                Risk Management, Discipline, and Patience
               </ListItem>
             </ul>
           </NavigationMenuContent>
