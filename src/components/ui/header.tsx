@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import { resources } from "@/lib/data"
 
 import { cn } from "@/lib/utils"
 import {
@@ -74,18 +75,15 @@ export function Header() {
           <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/price-action" title="Price Action">
-                Trend lines, Patterns, and Volume
-              </ListItem>
-              <ListItem href="/smart-money-concept" title="Smart Money Concept">
-                Order Blocks, Imbalances, and Liquidity
-              </ListItem>
-              <ListItem href="/harmonic-patterns" title="Harmonic Patterns">
-                Pattern Structure, Ratios, and Targets
-              </ListItem>
-              <ListItem href="/trading-psychology" title="Trading Psychology">
-                Risk Management, Discipline, and Patience
-              </ListItem>
+              {resources.map((resource) => (
+                <ListItem
+                  key={resource.title}
+                  title={resource.title}
+                  href={resource.href}
+                >
+                {resource.description}
+                </ListItem>
+              ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
