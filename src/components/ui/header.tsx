@@ -74,16 +74,16 @@ export function Header() {
           <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/docs" title="Price Action">
+              <ListItem href="/price-action" title="Price Action">
                 Trend lines, Patterns, and Volume
               </ListItem>
-              <ListItem href="/docs/installation" title="Smart Money Concept">
+              <ListItem href="/smart-money-concept" title="Smart Money Concept">
                 Order Blocks, Imbalances, and Liquidity
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Harmonic Patterns">
+              <ListItem href="/harmonic-patterns" title="Harmonic Patterns">
                 Pattern Structure, Ratios, and Targets
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Trading Psychology">
+              <ListItem href="/trading-psychology" title="Trading Psychology">
                 Risk Management, Discipline, and Patience
               </ListItem>
             </ul>
