@@ -74,13 +74,16 @@ export function Header() {
           <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/docs" title="Introduction">
+              <ListItem href="/docs" title="Price Action">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
+              <ListItem href="/docs/installation" title="Smart Money Concept">
                 How to install dependencies and structure your app.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
+              <ListItem href="/docs/primitives/typography" title="Harmonic Patterns">
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+              <ListItem href="/docs/primitives/typography" title="Trading Psychology">
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
             </ul>
