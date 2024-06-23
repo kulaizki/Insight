@@ -1,14 +1,16 @@
-'use client';
+'use client'
 
 export default async function Page() {
   return (
     <section className='py-24'>
-      <div className='flex flex-col p-8 gap-4'>
+      <div className='flex flex-col gap-4 p-8'>
         <h1 className='text-6xl font-bold'>Combination</h1>
-        <p className="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quae architecto deserunt quam. Nobis autem assumenda optio porro neque ex! Porro, labore ab doloribus quibusdam id nam dolor dolores tempore.</p>
+        <p className='text-lg'>
+          This strategy combines various technical indicators and strategies to
+          generate strong confluences. It's designed for traders who prefer a
+          comprehensive approach to market analysis.
+        </p>
       </div>
     </section>
   )
 }
-
-
