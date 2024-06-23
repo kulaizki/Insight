@@ -22,7 +22,7 @@ export function Header() {
   const { theme } = useTheme()
 
   return (
-    <div className='hidden w-full items-center justify-between px-8 md:flex md:h-[80px]'>
+    <div className='hidden w-full items-center justify-between px-8 md:flex '>
       <Link href='/' legacyBehavior passHref>
         <a className='flex items-center space-x-2'>
           <Image
