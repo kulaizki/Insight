@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
+import { ThemeToggle } from './theme-toggle'
 import { resources, strategies } from '@/lib/data'
 
 import { cn } from '@/lib/utils'
@@ -17,7 +18,7 @@ import {
 
 export function Header() {
   return (
-    <div className='w-full flex justify-around md:h-[60px] items-center'>
+    <div className='w-full flex justify-around md:h-[80px] items-center'>
       <img src="./insight-white.png" alt="" className='hidden md:block md:h-[60px]' />
       <NavigationMenu>
         <NavigationMenuList>
@@ -69,6 +70,7 @@ export function Header() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      <ThemeToggle />
     </div>
   )
 }
