@@ -26,25 +26,25 @@ const strategies: { title: string; href: string; description: string }[] = [
     title: 'SMC & Harmonics',
     href: '/strategies/smc-harmonics',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
+      'Leverages volume and liquidity data with Harmonic patterns'
   },
   {
     title: 'Pivot & EMA',
     href: '/strategies/pivot-ema',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
+      'Focuses on identifying market trends and potential reversal points'
   },
   {
     title: 'RSI & Price Action',
     href: '/strategies/rsi-price-action',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
+      'Optimized for quick scalps and momentum trades'
   },
   {
     title: 'Combination',
     href: '/strategies/combination',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
+      'A limitless mix of everything you can think of'
   }
 ]
 
