@@ -25,7 +25,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='flex flex-col items-center gap-20'>
+          <div className='flex flex-col items-center gap-20 px-8'>
             <Header />
             {children}
           </div>
