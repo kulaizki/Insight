@@ -23,26 +23,26 @@ const resources: { title: string; href: string; description: string }[] = [
 
 const strategies: { title: string; href: string; description: string }[] = [
   {
-    title: 'Strategy 1',
-    href: '/',
+    title: 'SMC & Harmonics',
+    href: '/strategies/smc-harmonics',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
   },
   {
-    title: 'Strategy 2',
-    href: '/',
+    title: 'Pivot & EMA',
+    href: '/strategies/pivot-ema',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
   },
   {
-    title: 'Strategy 3',
-    href: '/',
+    title: 'RSI & Price Action',
+    href: '/strategies/rsi-price-action',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
   },
   {
-    title: 'Strategy 4',
-    href: '/',
+    title: 'Combination',
+    href: '/strategies/combination',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.'
   }
