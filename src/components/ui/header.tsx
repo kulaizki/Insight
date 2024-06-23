@@ -3,6 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { ThemeToggle } from './theme-toggle'
+import { useTheme } from 'next-themes'
 import { resources, strategies } from '@/lib/data'
 
 import { cn } from '@/lib/utils'
@@ -17,9 +18,15 @@ import {
 } from '@/components/ui/navigation-menu'
 
 export function Header() {
+  const { theme } = useTheme()
+
   return (
-    <div className='w-full flex justify-around md:h-[80px] items-center'>
-      <img src="./insight-white.png" alt="" className='hidden md:block md:h-[60px]' />
+    <div className='flex w-full items-center justify-around md:h-[80px]'>
+      <img
+        src={theme === 'dark' ? '/insight-white.png' : '/insight-black.png'}
+        alt=''
+        className='hidden md:block md:h-[60px]'
+      />
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
