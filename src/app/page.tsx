@@ -12,7 +12,7 @@ export default function Home() {
       <div className='flex flex-col items-center gap-8 md:flex-row md:gap-8 md:p-8'>
         <div className='flex flex-col gap-8'>
           <h1 className='text-4xl font-bold md:text-6xl'>Trade with Insight</h1>
-          <p className='max-w-full text-base leading-7 md:max-w-xl md:text-lg'>
+          <p className='max-w-full font-light text-base leading-7 md:max-w-xl md:text-lg'>
             Create your own strategies and journalize your trades with ease
           </p>
           <Button>
