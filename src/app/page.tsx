@@ -24,7 +24,7 @@ export default function Home() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              Go to Tradingview
+              Go to TradingView
             </Link>
           </Button>
         </div>
