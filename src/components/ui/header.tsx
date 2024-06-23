@@ -22,14 +22,19 @@ export function Header() {
   const { theme } = useTheme()
 
   return (
-    <div className='hidden md:flex w-full items-center justify-between px-8 md:h-[80px]'>
-      <Image
-        src={theme === 'light' ? '/insight-black.png' : '/insight-white.png'}
-        width={60}
-        height={60}
-        className='hidden md:block'
-        alt='logo'
-      />
+    <div className='hidden w-full items-center justify-between px-8 md:flex md:h-[80px]'>
+      <Link href='/' legacyBehavior passHref>
+        <a className='flex items-center space-x-2'>
+          <Image
+            src={
+              theme === 'light' ? '/insight-black.png' : '/insight-white.png'
+            }
+            width={60}
+            height={60}
+            alt='logo'
+          />
+        </a>
+      </Link>
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
