@@ -21,7 +21,7 @@ export function Header() {
   const { theme } = useTheme()
 
   return (
-    <div className='flex w-full items-center justify-around md:h-[80px]'>
+    <div className='flex w-full items-center justify-between px-8 md:h-[80px]'>
       <img
         src={theme === 'light' ? '/insight-black.png' : '/insight-white.png'}
         alt='logo'
