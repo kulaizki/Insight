@@ -1,13 +1,15 @@
-'use client';
+'use client'
 
 export default async function Page() {
   return (
     <section className='py-24'>
-      <div className='flex flex-col p-8 gap-4'>
+      <div className='flex flex-col gap-4 p-8'>
         <h1 className='text-6xl font-bold'>Harmonic Patterns</h1>
-        <p className="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quae architecto deserunt quam. Nobis autem assumenda optio porro neque ex! Porro, labore ab doloribus quibusdam id nam dolor dolores tempore.</p>
+        <p className='text-lg'>
+          Provides insights into the structure, ratios, and targets of Harmonic
+          Patterns in trading.
+        </p>
       </div>
     </section>
   )
 }
-
