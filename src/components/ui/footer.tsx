@@ -11,7 +11,7 @@ export function Footer() {
   const { theme } = useTheme()
   const socialLinks = socialLinksData.map(link => ({
     ...link,
-    imgSrc: theme === 'dark' ? link.imgSrc.replace('.png', '-dark.png') : link.imgSrc
+    imgSrc: theme === 'light' ? link.imgSrc.replace('-dark.png', '.png') : link.imgSrc
   }))
 
   return (
