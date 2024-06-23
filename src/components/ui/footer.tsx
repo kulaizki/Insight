@@ -1,23 +1,17 @@
 'use client'
 
 import * as React from 'react'
-import Image from 'next/image'
+import Image from 'next/image'  
+import { socialLinks } from '@/lib/data'
 
 export function Footer() {
   return (
     <div className='flex items-center justify-center gap-4 '>
-      <a href='https://www.linkedin.com/in/kulaizki/' target='_blank' rel='noopener noreferrer'>
-        <Image src='/linkedin.png' alt='linkedin' width={50} height={50} />
-      </a>
-      <a href='https://github.com/kulaizki' target='_blank' rel='noopener noreferrer'>
-        <Image src='/github.png' alt='github' width={50} height={50} />
-      </a>
-      <a href='https://facebook.com/kulaizki' target='_blank' rel='noopener noreferrer'>
-        <Image src='/facebook.png' alt='facebook' width={50} height={50} />
-      </a>
-      <a href='https://discord.com/users/295805809479254016' target='_blank' rel='noopener noreferrer'>
-        <Image src='/discord.png' alt='discord' width={50} height={50} />
-      </a>
+      {socialLinks.map((link) => (
+        <a key={link.href} href={link.href} target='_blank' rel='noopener noreferrer'>
+          <Image src={link.imgSrc} alt={link.alt} width={45} height={45} />
+        </a>
+      ))}
     </div>
   )
 }
