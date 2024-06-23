@@ -4,7 +4,7 @@ import { Table } from '@/components/ui/table'
 
 export default async function Page() {
   return (
-    <section className="md:px-24 w-full">
+    <section className="md:px-24">
       <div className='flex flex-col gap-4 p-4 sm:p-8'>
         <h1 className='text-4xl sm:text-6xl font-bold'>Journal</h1>
         <p className='text-sm sm:text-lg max-w-full '>

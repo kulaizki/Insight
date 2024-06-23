@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ui/theme-provider'
 import { Header } from '@/components/ui/header'
+import { Footer } from '@/components/ui/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,9 +26,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='flex flex-col items-center gap-20 px-8'>
+          <div className='flex flex-col items-center justify-between min-h-screen px-8 pt-2 pb-8'>
             <Header />
-            {children}
+            <div className='w-full'>{children}</div>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>
