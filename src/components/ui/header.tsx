@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ThemeToggle } from './theme-toggle'
 import { useTheme } from 'next-themes'
 import { resources, strategies } from '@/lib/data'
@@ -21,11 +22,13 @@ export function Header() {
   const { theme } = useTheme()
 
   return (
-    <div className='flex w-full items-center justify-between px-8 md:h-[80px]'>
-      <img
+    <div className='hidden md:flex w-full items-center justify-between px-8 md:h-[80px]'>
+      <Image
         src={theme === 'light' ? '/insight-black.png' : '/insight-white.png'}
+        width={60}
+        height={60}
+        className='hidden md:block'
         alt='logo'
-        className='hidden md:block md:h-[60px]'
       />
       <NavigationMenu>
         <NavigationMenuList>
