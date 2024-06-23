@@ -17,7 +17,8 @@ import {
 
 export function Header() {
   return (
-    <div className='w-full flex justify-center md:h-[60px]'>
+    <div className='w-full flex justify-around md:h-[60px] items-center'>
+      <img src="./insight-white.png" alt="" className='hidden md:block md:h-[60px]' />
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
