@@ -8,7 +8,7 @@ export default function Page() {
         <p className='text-lg'>
           This strategy uses the Relative Strength Index (RSI) in conjunction
           with Price Action analysis to identify overbought or oversold
-          conditions. It's a popular strategy for momentum trading.
+          conditions. It&apos;s a popular strategy for momentum trading.
         </p>
       </div>
     </section>
