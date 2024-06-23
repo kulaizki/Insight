@@ -24,7 +24,7 @@ export function Header() {
     <div className='flex w-full items-center justify-around md:h-[80px]'>
       <img
         src={theme === 'dark' ? '/insight-white.png' : '/insight-black.png'}
-        alt=''
+        alt='logo'
         className='hidden md:block md:h-[60px]'
       />
       <NavigationMenu>
