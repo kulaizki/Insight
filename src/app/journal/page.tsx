@@ -12,6 +12,7 @@ export default async function Page() {
           architecto deserunt quam. Nobis autem assumenda optio porro neque ex!
           Porro, labore ab doloribus quibusdam id nam dolor dolores tempore.
         </p>
+        {/*use backend to fetch data and display it in the table */}
         {/* table will include trade history */}
         <Table />
       </div>
