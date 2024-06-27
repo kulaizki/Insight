@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Insight',
-  description: 'Trade with Insight',
+  description: 'Trade with Insight'
 }
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='flex flex-col items-center justify-between min-h-screen px-8 pt-2 pb-8'>
+          <div className='flex min-h-screen flex-col items-center justify-between px-8 pb-8 pt-2'>
             <Header />
             <div className='w-full'>{children}</div>
             <Footer />
