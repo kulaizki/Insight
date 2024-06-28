@@ -1,5 +1,3 @@
-import { useTheme } from 'next-themes'
-
 const resources: { title: string; href: string; description: string }[] = [
   {
     title: 'Price Action',
