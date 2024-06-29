@@ -7,7 +7,6 @@ import { useTheme } from 'next-themes'
 import { socialLinks as socialLinksData } from '@/lib/data'
 
 export function Footer() {
-  const isSmallScreen = useMediaQuery({ maxWidth: 480 })
   const { theme } = useTheme()
   const socialLinks = socialLinksData.map(link => ({
     ...link,
