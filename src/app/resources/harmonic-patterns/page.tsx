@@ -1,6 +1,7 @@
 'use client'
 
 export default function Page() {
+
   return (
     <section className="md:px-24">
       <div className='flex flex-col gap-4 p-4 sm:p-8'>

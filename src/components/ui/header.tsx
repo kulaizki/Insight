@@ -27,7 +27,7 @@ export function Header() {
         <a className='flex items-center space-x-2'>
           <Image
             src={
-              theme === 'light' ? '/insight-black.png' : '/insight-white.png'
+              theme === 'light' ? '/insight.png' : '/insight-dark.png'
             }
             width={60}
             height={60}
