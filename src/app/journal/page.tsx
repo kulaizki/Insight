@@ -14,7 +14,7 @@ export default async function Page() {
         </p>
         {/*use backend to fetch data and display it in the table */}
         {/* table will include trade history */}
-        <Table />
+        {/* <Table /> */}
       </div>
     </section>
   )
